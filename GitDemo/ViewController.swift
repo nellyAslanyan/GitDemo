@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
   @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var logoImageView: UIImageView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
