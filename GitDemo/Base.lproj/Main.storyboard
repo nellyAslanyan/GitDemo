@@ -22,16 +22,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="richtext.page.he" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gWw-xv-gMr">
+                                <rect key="frame" x="70" y="129.33333333333331" width="253" height="281.33333333333343"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gWw-xv-gMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="6hg-CV-bFy"/>
                             <constraint firstItem="7ae-nV-8SM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V4A-kO-4sI"/>
                             <constraint firstItem="7ae-nV-8SM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W0i-Ki-frR"/>
+                            <constraint firstItem="7ae-nV-8SM" firstAttribute="top" secondItem="gWw-xv-gMr" secondAttribute="bottom" constant="5" id="Z17-4l-gCy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gWw-xv-gMr" secondAttribute="trailing" constant="70" id="ZIX-Wf-nxe"/>
+                            <constraint firstItem="gWw-xv-gMr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="ean-rv-rY8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="7ae-nV-8SM" id="5A4-8s-MXp"/>
+                        <outlet property="logoImageView" destination="gWw-xv-gMr" id="ewK-Lg-ubi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,6 +48,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="richtext.page.he" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
